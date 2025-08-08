@@ -1,54 +1,11 @@
-# Ona Terminal - AI-Powered DevOps Platform
+# Ona Terminal - AI-Powered Energy Operations Workflow Platform
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-green.svg)](https://modelcontextprotocol.io/)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock%20Ready-orange.svg)](https://aws.amazon.com/bedrock/)
 
-> **Transform your development workflow** with intelligent automation, infrastructure-as-code deployment, and comprehensive code analysis powered by cutting-edge AI models including Claude 4, Llama 4, and self-hosted fine-tuned models.
-
-## 🚀 Quick Start
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/AsobaCloud/ona-terminal.git
-cd ona-terminal
-
-# 2. Run the install script (handles pip install + PATH setup)
-./install.sh
-
-# 3. Reload your shell configuration
-source ~/.bashrc  # or ~/.zshrc, or restart terminal
-
-# 4. Set up AWS credentials (for AI models)
-export AWS_DEFAULT_REGION=us-east-1
-# Configure AWS credentials via aws configure or environment variables
-
-# 5. Optional: Set GitHub token for repository integration
-export GITHUB_TOKEN=your_github_token_here
-
-# 6. Start the terminal interface
-ona-terminal  # Launches interactive mode (default)
-# OR
-ona-terminal --help  # Show available commands
-```
-
-### Manual Installation (Alternative)
-
-If you prefer to install manually:
-
-```bash
-# Install with pip
-pip install -e . --user
-
-# Add to PATH (choose one):
-# For current session only:
-export PATH=$PATH:$HOME/.local/bin
-
-# Or add permanently to ~/.bashrc or ~/.zshrc:
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
-```
+> **Transform your energy ops management workflow** with intelligent asset performance forecasting, maintenance dispatch automation, and comprehensive regulatory compliance analysis powered by cutting-edge AI models.
 
 ## 🏢 Windows Installation (Recommended)
 
@@ -201,7 +158,7 @@ OnaTerminal supports multiple AI providers with intelligent routing:
 
 **Single-Responsibility Agents**:
 - `UploadAgent`: Data upload and processing pipeline monitoring
-- `ForecastAgent`: Forecast generation and retrieval (mock implementation)
+- `ForecastAgent`: Forecast generation and retrieval
 
 **Agent Design Pattern**:
 - **Single Responsibility**: Each agent handles one specific workflow
